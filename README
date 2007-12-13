@@ -6,11 +6,11 @@ Build requirements:
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.10-1.10-1
-  cygport-0.3.1-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
-  gnome-doc-utils-0.10.3-1
+  gnome-doc-utils-0.13.0-1
   make-3.81-1
-  scrollkeeper-0.3.14-2
+  rarian-0.6.0-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -22,15 +22,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-user-docs-2.18.2-X-src.tar.bz2
+  unpack gnome-user-docs-2.20.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-user-docs-2.18.2-X.cygport all
+  cygport ./gnome-user-docs-2.20.1-X.cygport all
 
 This will create:
-  /usr/src/gnome-user-docs-2.18.2-X-src.tar.bz2
-  /usr/src/gnome-user-docs-2.18.2-X.tar.bz2
+  /usr/src/gnome-user-docs-2.20.1-X-src.tar.bz2
+  /usr/src/gnome-user-docs-2.20.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -38,17 +38,15 @@ Files included in the binary package:
 
   /etc/postinstall/gnome-user-docs.sh
   /etc/preremove/gnome-user-docs.sh
-  /usr/share/doc/Cygwin/gnome-user-docs-2.18.2.README
-  /usr/share/doc/gnome-user-docs-2.18.2/AUTHORS
-  /usr/share/doc/gnome-user-docs-2.18.2/COPYING
-  /usr/share/doc/gnome-user-docs-2.18.2/COPYING-DOCS
-  /usr/share/doc/gnome-user-docs-2.18.2/ChangeLog
-  /usr/share/doc/gnome-user-docs-2.18.2/INSTALL
-  /usr/share/doc/gnome-user-docs-2.18.2/NEWS
-  /usr/share/doc/gnome-user-docs-2.18.2/README
+  /usr/share/doc/gnome-user-docs-2.20.1/AUTHORS
+  /usr/share/doc/gnome-user-docs-2.20.1/COPYING
+  /usr/share/doc/gnome-user-docs-2.20.1/COPYING-DOCS
+  /usr/share/doc/gnome-user-docs-2.20.1/ChangeLog
+  /usr/share/doc/gnome-user-docs-2.20.1/INSTALL
+  /usr/share/doc/gnome-user-docs-2.20.1/NEWS
+  /usr/share/doc/gnome-user-docs-2.20.1/README
   /usr/share/gnome/help/gnome-access-guide/C/accessintro.xml
-  /usr/share/gnome/help/gnome-access-guide/C/ats.xml
-  /usr/share/gnome/help/gnome-access-guide/C/dtconfig.xml
+  /usr/share/gnome/help/gnome-access-guide/C/enable.xml
   /usr/share/gnome/help/gnome-access-guide/C/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/C/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/C/figures/button.png
@@ -75,12 +73,67 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/C/figures/tabbed_section.png
   /usr/share/gnome/help/gnome-access-guide/C/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/C/figures/tree.png
+  /usr/share/gnome/help/gnome-access-guide/C/general.xml
   /usr/share/gnome/help/gnome-access-guide/C/gnome-access-guide.xml
-  /usr/share/gnome/help/gnome-access-guide/C/keynav.xml
   /usr/share/gnome/help/gnome-access-guide/C/legal.xml
+  /usr/share/gnome/help/gnome-access-guide/C/low-vision.xml
+  /usr/share/gnome/help/gnome-access-guide/C/mobility.xml
   /usr/share/gnome/help/gnome-access-guide/C/preface.xml
   /usr/share/gnome/help/gnome-access-guide/C/sysadmin.xml
-  /usr/share/gnome/help/gnome-access-guide/C/themes.xml
+  /usr/share/gnome/help/gnome-access-guide/de/figures/accessx.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/bouncekeys.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/button.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/check_box.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/dropdown_combination_box.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/dropdown_list_box.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/mousekeys.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/move_object_arrows.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/move_object_before.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/move_object_jump.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/move_object_push.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/radio_button.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/slider.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/slowkeys.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/spin_box.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/stickyaltlatch.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/stickyaltlock.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/stickyctrllatch.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/stickyctrllock.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/stickyshiftlatch.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/stickyshiftlock.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/stickywindowlatch.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/stickywindowlock.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/tabbed_section.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/text_box.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/tree.png
+  /usr/share/gnome/help/gnome-access-guide/de/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/el/figures/accessx.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/bouncekeys.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/button.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/check_box.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/dropdown_combination_box.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/dropdown_list_box.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/mousekeys.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/move_object_arrows.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/move_object_before.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/move_object_jump.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/move_object_push.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/radio_button.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/slider.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/slowkeys.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/spin_box.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/stickyaltlatch.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/stickyaltlock.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/stickyctrllatch.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/stickyctrllock.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/stickyshiftlatch.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/stickyshiftlock.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/stickywindowlatch.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/stickywindowlock.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/tabbed_section.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/text_box.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/tree.png
+  /usr/share/gnome/help/gnome-access-guide/el/gnome-access-guide.xml
   /usr/share/gnome/help/gnome-access-guide/en_GB/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/en_GB/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/en_GB/figures/button.png
@@ -189,6 +242,33 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/it/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/it/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/it/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/accessx.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/bouncekeys.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/button.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/check_box.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/dropdown_combination_box.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/dropdown_list_box.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/mousekeys.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/move_object_arrows.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/move_object_before.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/move_object_jump.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/move_object_push.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/radio_button.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/slider.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/slowkeys.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/spin_box.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/stickyaltlatch.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/stickyaltlock.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/stickyctrllatch.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/stickyctrllock.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/stickyshiftlatch.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/stickyshiftlock.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/stickywindowlatch.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/stickywindowlock.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/tabbed_section.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/text_box.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/tree.png
+  /usr/share/gnome/help/gnome-access-guide/pt/gnome-access-guide.xml
   /usr/share/gnome/help/gnome-access-guide/sv/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/sv/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/sv/figures/button.png
@@ -235,6 +315,7 @@ Files included in the binary package:
   /usr/share/gnome/help/system-admin-guide/fr/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/it/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/pa/system-admin-guide.xml
+  /usr/share/gnome/help/system-admin-guide/pt/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/sv/system-admin-guide.xml
   /usr/share/gnome/help/user-guide/C/figures/ask_pointer.png
   /usr/share/gnome/help/user-guide/C/figures/busy_pointer.png
@@ -468,6 +549,160 @@ Files included in the binary package:
   /usr/share/gnome/help/user-guide/bg/gosstartsession.xml
   /usr/share/gnome/help/user-guide/bg/gostools.xml
   /usr/share/gnome/help/user-guide/bg/user-guide.xml
+  /usr/share/gnome/help/user-guide/de/figures/ask_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/busy_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/com_file_manager_menu.png
+  /usr/share/gnome/help/user-guide/de/figures/copy_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/force_quit.png
+  /usr/share/gnome/help/user-guide/de/figures/four_hide_button.png
+  /usr/share/gnome/help/user-guide/de/figures/gedit_window.png
+  /usr/share/gnome/help/user-guide/de/figures/gnome_panel.png
+  /usr/share/gnome/help/user-guide/de/figures/hyperlink_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/ibeam_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/link_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/lockscreen_icon.png
+  /usr/share/gnome/help/user-guide/de/figures/logout_icon.png
+  /usr/share/gnome/help/user-guide/de/figures/menu_bar_applet.png
+  /usr/share/gnome/help/user-guide/de/figures/menu_panel.png
+  /usr/share/gnome/help/user-guide/de/figures/move_panel_object_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/move_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/movewindow_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_browser_mode.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_button_bar.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_computer_launcher.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_emblem.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_go_to_location.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_link_emblem.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_noread_emblem.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_normal_size_button.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_nowrite_emblem.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_refine_search.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_sampleemblem1_icon.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_sampleemblem2_icon.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_sampleemblem3_icon.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_sampleemblem_icon.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_samplesymlink_icon.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_search_bar.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_search_results.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_spatial_icon_view.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_spatial_list_view.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_spatial_mode.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_spatial_view.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_starthere_launcher.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_trash_launcher.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_zoom_in_button.png
+  /usr/share/gnome/help/user-guide/de/figures/naut_zoom_out_button.png
+  /usr/share/gnome/help/user-guide/de/figures/nautilus_restore_saved_search.png
+  /usr/share/gnome/help/user-guide/de/figures/normal_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/not_available_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/notification_area_icon.png
+  /usr/share/gnome/help/user-guide/de/figures/open_drawer.png
+  /usr/share/gnome/help/user-guide/de/figures/openwindows_menu.png
+  /usr/share/gnome/help/user-guide/de/figures/panel_object_popup_menu.png
+  /usr/share/gnome/help/user-guide/de/figures/resize_pointer.png
+  /usr/share/gnome/help/user-guide/de/figures/run_button.png
+  /usr/share/gnome/help/user-guide/de/figures/sample_applet.png
+  /usr/share/gnome/help/user-guide/de/figures/screenshot_button.png
+  /usr/share/gnome/help/user-guide/de/figures/searchtool_button.png
+  /usr/share/gnome/help/user-guide/de/figures/show_desktop_button.png
+  /usr/share/gnome/help/user-guide/de/figures/titlebar_anno_window.png
+  /usr/share/gnome/help/user-guide/de/figures/titlebar_window.png
+  /usr/share/gnome/help/user-guide/de/figures/typical_menu.png
+  /usr/share/gnome/help/user-guide/de/figures/window_list_applet.png
+  /usr/share/gnome/help/user-guide/de/figures/window_list_group_applet.png
+  /usr/share/gnome/help/user-guide/de/figures/workspace_switcher_applet.png
+  /usr/share/gnome/help/user-guide/de/figures/yelp_add_bookmark.png
+  /usr/share/gnome/help/user-guide/de/figures/yelp_edit_bookmarks.png
+  /usr/share/gnome/help/user-guide/de/figures/yelp_preferences.png
+  /usr/share/gnome/help/user-guide/de/figures/yelp_window.png
+  /usr/share/gnome/help/user-guide/de/glossary.xml
+  /usr/share/gnome/help/user-guide/de/gosbasic.xml
+  /usr/share/gnome/help/user-guide/de/goscustdesk.xml
+  /usr/share/gnome/help/user-guide/de/goseditmainmenu.xml
+  /usr/share/gnome/help/user-guide/de/gosfeedback.xml
+  /usr/share/gnome/help/user-guide/de/gosnautilus.xml
+  /usr/share/gnome/help/user-guide/de/gosoverview.xml
+  /usr/share/gnome/help/user-guide/de/gospanel.xml
+  /usr/share/gnome/help/user-guide/de/gosstartsession.xml
+  /usr/share/gnome/help/user-guide/de/gostools.xml
+  /usr/share/gnome/help/user-guide/de/user-guide.xml
+  /usr/share/gnome/help/user-guide/el/figures/ask_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/busy_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/com_file_manager_menu.png
+  /usr/share/gnome/help/user-guide/el/figures/copy_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/force_quit.png
+  /usr/share/gnome/help/user-guide/el/figures/four_hide_button.png
+  /usr/share/gnome/help/user-guide/el/figures/gedit_window.png
+  /usr/share/gnome/help/user-guide/el/figures/gnome_panel.png
+  /usr/share/gnome/help/user-guide/el/figures/hyperlink_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/ibeam_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/link_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/lockscreen_icon.png
+  /usr/share/gnome/help/user-guide/el/figures/logout_icon.png
+  /usr/share/gnome/help/user-guide/el/figures/menu_bar_applet.png
+  /usr/share/gnome/help/user-guide/el/figures/menu_panel.png
+  /usr/share/gnome/help/user-guide/el/figures/move_panel_object_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/move_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/movewindow_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_browser_mode.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_button_bar.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_computer_launcher.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_emblem.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_go_to_location.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_link_emblem.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_noread_emblem.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_normal_size_button.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_nowrite_emblem.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_refine_search.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_sampleemblem1_icon.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_sampleemblem2_icon.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_sampleemblem3_icon.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_sampleemblem_icon.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_samplesymlink_icon.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_search_bar.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_search_results.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_spatial_icon_view.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_spatial_list_view.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_spatial_mode.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_spatial_view.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_starthere_launcher.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_trash_launcher.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_zoom_in_button.png
+  /usr/share/gnome/help/user-guide/el/figures/naut_zoom_out_button.png
+  /usr/share/gnome/help/user-guide/el/figures/nautilus_restore_saved_search.png
+  /usr/share/gnome/help/user-guide/el/figures/normal_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/not_available_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/notification_area_icon.png
+  /usr/share/gnome/help/user-guide/el/figures/open_drawer.png
+  /usr/share/gnome/help/user-guide/el/figures/openwindows_menu.png
+  /usr/share/gnome/help/user-guide/el/figures/panel_object_popup_menu.png
+  /usr/share/gnome/help/user-guide/el/figures/resize_pointer.png
+  /usr/share/gnome/help/user-guide/el/figures/run_button.png
+  /usr/share/gnome/help/user-guide/el/figures/sample_applet.png
+  /usr/share/gnome/help/user-guide/el/figures/screenshot_button.png
+  /usr/share/gnome/help/user-guide/el/figures/searchtool_button.png
+  /usr/share/gnome/help/user-guide/el/figures/show_desktop_button.png
+  /usr/share/gnome/help/user-guide/el/figures/titlebar_anno_window.png
+  /usr/share/gnome/help/user-guide/el/figures/titlebar_window.png
+  /usr/share/gnome/help/user-guide/el/figures/typical_menu.png
+  /usr/share/gnome/help/user-guide/el/figures/window_list_applet.png
+  /usr/share/gnome/help/user-guide/el/figures/window_list_group_applet.png
+  /usr/share/gnome/help/user-guide/el/figures/workspace_switcher_applet.png
+  /usr/share/gnome/help/user-guide/el/figures/yelp_add_bookmark.png
+  /usr/share/gnome/help/user-guide/el/figures/yelp_edit_bookmarks.png
+  /usr/share/gnome/help/user-guide/el/figures/yelp_preferences.png
+  /usr/share/gnome/help/user-guide/el/figures/yelp_window.png
+  /usr/share/gnome/help/user-guide/el/glossary.xml
+  /usr/share/gnome/help/user-guide/el/gosbasic.xml
+  /usr/share/gnome/help/user-guide/el/goscustdesk.xml
+  /usr/share/gnome/help/user-guide/el/goseditmainmenu.xml
+  /usr/share/gnome/help/user-guide/el/gosfeedback.xml
+  /usr/share/gnome/help/user-guide/el/gosnautilus.xml
+  /usr/share/gnome/help/user-guide/el/gosoverview.xml
+  /usr/share/gnome/help/user-guide/el/gospanel.xml
+  /usr/share/gnome/help/user-guide/el/gosstartsession.xml
+  /usr/share/gnome/help/user-guide/el/gostools.xml
+  /usr/share/gnome/help/user-guide/el/user-guide.xml
   /usr/share/gnome/help/user-guide/es/figures/ask_pointer.png
   /usr/share/gnome/help/user-guide/es/figures/busy_pointer.png
   /usr/share/gnome/help/user-guide/es/figures/com_file_manager_menu.png
@@ -545,6 +780,83 @@ Files included in the binary package:
   /usr/share/gnome/help/user-guide/es/gosstartsession.xml
   /usr/share/gnome/help/user-guide/es/gostools.xml
   /usr/share/gnome/help/user-guide/es/user-guide.xml
+  /usr/share/gnome/help/user-guide/fi/figures/ask_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/busy_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/com_file_manager_menu.png
+  /usr/share/gnome/help/user-guide/fi/figures/copy_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/force_quit.png
+  /usr/share/gnome/help/user-guide/fi/figures/four_hide_button.png
+  /usr/share/gnome/help/user-guide/fi/figures/gedit_window.png
+  /usr/share/gnome/help/user-guide/fi/figures/gnome_panel.png
+  /usr/share/gnome/help/user-guide/fi/figures/hyperlink_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/ibeam_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/link_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/lockscreen_icon.png
+  /usr/share/gnome/help/user-guide/fi/figures/logout_icon.png
+  /usr/share/gnome/help/user-guide/fi/figures/menu_bar_applet.png
+  /usr/share/gnome/help/user-guide/fi/figures/menu_panel.png
+  /usr/share/gnome/help/user-guide/fi/figures/move_panel_object_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/move_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/movewindow_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_browser_mode.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_button_bar.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_computer_launcher.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_emblem.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_go_to_location.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_link_emblem.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_noread_emblem.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_normal_size_button.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_nowrite_emblem.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_refine_search.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_sampleemblem1_icon.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_sampleemblem2_icon.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_sampleemblem3_icon.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_sampleemblem_icon.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_samplesymlink_icon.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_search_bar.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_search_results.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_spatial_icon_view.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_spatial_list_view.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_spatial_mode.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_spatial_view.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_starthere_launcher.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_trash_launcher.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_zoom_in_button.png
+  /usr/share/gnome/help/user-guide/fi/figures/naut_zoom_out_button.png
+  /usr/share/gnome/help/user-guide/fi/figures/nautilus_restore_saved_search.png
+  /usr/share/gnome/help/user-guide/fi/figures/normal_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/not_available_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/notification_area_icon.png
+  /usr/share/gnome/help/user-guide/fi/figures/open_drawer.png
+  /usr/share/gnome/help/user-guide/fi/figures/openwindows_menu.png
+  /usr/share/gnome/help/user-guide/fi/figures/panel_object_popup_menu.png
+  /usr/share/gnome/help/user-guide/fi/figures/resize_pointer.png
+  /usr/share/gnome/help/user-guide/fi/figures/run_button.png
+  /usr/share/gnome/help/user-guide/fi/figures/sample_applet.png
+  /usr/share/gnome/help/user-guide/fi/figures/screenshot_button.png
+  /usr/share/gnome/help/user-guide/fi/figures/searchtool_button.png
+  /usr/share/gnome/help/user-guide/fi/figures/show_desktop_button.png
+  /usr/share/gnome/help/user-guide/fi/figures/titlebar_anno_window.png
+  /usr/share/gnome/help/user-guide/fi/figures/titlebar_window.png
+  /usr/share/gnome/help/user-guide/fi/figures/typical_menu.png
+  /usr/share/gnome/help/user-guide/fi/figures/window_list_applet.png
+  /usr/share/gnome/help/user-guide/fi/figures/window_list_group_applet.png
+  /usr/share/gnome/help/user-guide/fi/figures/workspace_switcher_applet.png
+  /usr/share/gnome/help/user-guide/fi/figures/yelp_add_bookmark.png
+  /usr/share/gnome/help/user-guide/fi/figures/yelp_edit_bookmarks.png
+  /usr/share/gnome/help/user-guide/fi/figures/yelp_preferences.png
+  /usr/share/gnome/help/user-guide/fi/figures/yelp_window.png
+  /usr/share/gnome/help/user-guide/fi/glossary.xml
+  /usr/share/gnome/help/user-guide/fi/gosbasic.xml
+  /usr/share/gnome/help/user-guide/fi/goscustdesk.xml
+  /usr/share/gnome/help/user-guide/fi/goseditmainmenu.xml
+  /usr/share/gnome/help/user-guide/fi/gosfeedback.xml
+  /usr/share/gnome/help/user-guide/fi/gosnautilus.xml
+  /usr/share/gnome/help/user-guide/fi/gosoverview.xml
+  /usr/share/gnome/help/user-guide/fi/gospanel.xml
+  /usr/share/gnome/help/user-guide/fi/gosstartsession.xml
+  /usr/share/gnome/help/user-guide/fi/gostools.xml
+  /usr/share/gnome/help/user-guide/fi/user-guide.xml
   /usr/share/gnome/help/user-guide/fr/figures/ask_pointer.png
   /usr/share/gnome/help/user-guide/fr/figures/busy_pointer.png
   /usr/share/gnome/help/user-guide/fr/figures/com_file_manager_menu.png
@@ -622,6 +934,83 @@ Files included in the binary package:
   /usr/share/gnome/help/user-guide/fr/gosstartsession.xml
   /usr/share/gnome/help/user-guide/fr/gostools.xml
   /usr/share/gnome/help/user-guide/fr/user-guide.xml
+  /usr/share/gnome/help/user-guide/hu/figures/ask_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/busy_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/com_file_manager_menu.png
+  /usr/share/gnome/help/user-guide/hu/figures/copy_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/force_quit.png
+  /usr/share/gnome/help/user-guide/hu/figures/four_hide_button.png
+  /usr/share/gnome/help/user-guide/hu/figures/gedit_window.png
+  /usr/share/gnome/help/user-guide/hu/figures/gnome_panel.png
+  /usr/share/gnome/help/user-guide/hu/figures/hyperlink_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/ibeam_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/link_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/lockscreen_icon.png
+  /usr/share/gnome/help/user-guide/hu/figures/logout_icon.png
+  /usr/share/gnome/help/user-guide/hu/figures/menu_bar_applet.png
+  /usr/share/gnome/help/user-guide/hu/figures/menu_panel.png
+  /usr/share/gnome/help/user-guide/hu/figures/move_panel_object_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/move_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/movewindow_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_browser_mode.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_button_bar.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_computer_launcher.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_emblem.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_go_to_location.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_link_emblem.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_noread_emblem.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_normal_size_button.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_nowrite_emblem.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_refine_search.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_sampleemblem1_icon.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_sampleemblem2_icon.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_sampleemblem3_icon.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_sampleemblem_icon.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_samplesymlink_icon.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_search_bar.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_search_results.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_spatial_icon_view.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_spatial_list_view.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_spatial_mode.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_spatial_view.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_starthere_launcher.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_trash_launcher.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_zoom_in_button.png
+  /usr/share/gnome/help/user-guide/hu/figures/naut_zoom_out_button.png
+  /usr/share/gnome/help/user-guide/hu/figures/nautilus_restore_saved_search.png
+  /usr/share/gnome/help/user-guide/hu/figures/normal_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/not_available_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/notification_area_icon.png
+  /usr/share/gnome/help/user-guide/hu/figures/open_drawer.png
+  /usr/share/gnome/help/user-guide/hu/figures/openwindows_menu.png
+  /usr/share/gnome/help/user-guide/hu/figures/panel_object_popup_menu.png
+  /usr/share/gnome/help/user-guide/hu/figures/resize_pointer.png
+  /usr/share/gnome/help/user-guide/hu/figures/run_button.png
+  /usr/share/gnome/help/user-guide/hu/figures/sample_applet.png
+  /usr/share/gnome/help/user-guide/hu/figures/screenshot_button.png
+  /usr/share/gnome/help/user-guide/hu/figures/searchtool_button.png
+  /usr/share/gnome/help/user-guide/hu/figures/show_desktop_button.png
+  /usr/share/gnome/help/user-guide/hu/figures/titlebar_anno_window.png
+  /usr/share/gnome/help/user-guide/hu/figures/titlebar_window.png
+  /usr/share/gnome/help/user-guide/hu/figures/typical_menu.png
+  /usr/share/gnome/help/user-guide/hu/figures/window_list_applet.png
+  /usr/share/gnome/help/user-guide/hu/figures/window_list_group_applet.png
+  /usr/share/gnome/help/user-guide/hu/figures/workspace_switcher_applet.png
+  /usr/share/gnome/help/user-guide/hu/figures/yelp_add_bookmark.png
+  /usr/share/gnome/help/user-guide/hu/figures/yelp_edit_bookmarks.png
+  /usr/share/gnome/help/user-guide/hu/figures/yelp_preferences.png
+  /usr/share/gnome/help/user-guide/hu/figures/yelp_window.png
+  /usr/share/gnome/help/user-guide/hu/glossary.xml
+  /usr/share/gnome/help/user-guide/hu/gosbasic.xml
+  /usr/share/gnome/help/user-guide/hu/goscustdesk.xml
+  /usr/share/gnome/help/user-guide/hu/goseditmainmenu.xml
+  /usr/share/gnome/help/user-guide/hu/gosfeedback.xml
+  /usr/share/gnome/help/user-guide/hu/gosnautilus.xml
+  /usr/share/gnome/help/user-guide/hu/gosoverview.xml
+  /usr/share/gnome/help/user-guide/hu/gospanel.xml
+  /usr/share/gnome/help/user-guide/hu/gosstartsession.xml
+  /usr/share/gnome/help/user-guide/hu/gostools.xml
+  /usr/share/gnome/help/user-guide/hu/user-guide.xml
   /usr/share/gnome/help/user-guide/it/figures/ask_pointer.png
   /usr/share/gnome/help/user-guide/it/figures/busy_pointer.png
   /usr/share/gnome/help/user-guide/it/figures/com_file_manager_menu.png
@@ -708,6 +1097,7 @@ Files included in the binary package:
   /usr/share/gnome/help/user-guide/ko/figures/gedit_window.png
   /usr/share/gnome/help/user-guide/ko/figures/gnome_panel.png
   /usr/share/gnome/help/user-guide/ko/figures/hyperlink_pointer.png
+  /usr/share/gnome/help/user-guide/ko/figures/ibeam_pointer.png
   /usr/share/gnome/help/user-guide/ko/figures/link_pointer.png
   /usr/share/gnome/help/user-guide/ko/figures/lockscreen_icon.png
   /usr/share/gnome/help/user-guide/ko/figures/logout_icon.png
@@ -774,7 +1164,6 @@ Files included in the binary package:
   /usr/share/gnome/help/user-guide/ko/gospanel.xml
   /usr/share/gnome/help/user-guide/ko/gosstartsession.xml
   /usr/share/gnome/help/user-guide/ko/gostools.xml
-  /usr/share/gnome/help/user-guide/ko/ibeam_pointer.png
   /usr/share/gnome/help/user-guide/ko/user-guide.xml
   /usr/share/gnome/help/user-guide/pa/figures/ask_pointer.png
   /usr/share/gnome/help/user-guide/pa/figures/busy_pointer.png
@@ -1239,22 +1628,30 @@ Files included in the binary package:
   /usr/share/gnome/help/user-guide/zh_CN/gostools.xml
   /usr/share/gnome/help/user-guide/zh_CN/user-guide.xml
   /usr/share/omf/gnome-access-guide/gnome-access-guide-C.omf
+  /usr/share/omf/gnome-access-guide/gnome-access-guide-de.omf
+  /usr/share/omf/gnome-access-guide/gnome-access-guide-el.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-en_GB.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-es.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-fr.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-it.omf
+  /usr/share/omf/gnome-access-guide/gnome-access-guide-pt.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-sv.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-C.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-es.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-fr.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-it.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-pa.omf
+  /usr/share/omf/system-admin-guide/system-admin-guide-pt.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-sv.omf
   /usr/share/omf/user-guide/user-guide-C.omf
   /usr/share/omf/user-guide/user-guide-ar.omf
   /usr/share/omf/user-guide/user-guide-bg.omf
+  /usr/share/omf/user-guide/user-guide-de.omf
+  /usr/share/omf/user-guide/user-guide-el.omf
   /usr/share/omf/user-guide/user-guide-es.omf
+  /usr/share/omf/user-guide/user-guide-fi.omf
   /usr/share/omf/user-guide/user-guide-fr.omf
+  /usr/share/omf/user-guide/user-guide-hu.omf
   /usr/share/omf/user-guide/user-guide-it.omf
   /usr/share/omf/user-guide/user-guide-ko.omf
   /usr/share/omf/user-guide/user-guide-pa.omf
@@ -1267,6 +1664,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.20.1-1 -----
+Version bump for GNOME 2.20.
 
 ----- version 2.18.2-1 -----
 Version bump for GNOME 2.18.
