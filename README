@@ -3,14 +3,14 @@ gnome-user-docs
 GNOME user documentation
 
 Build requirements:
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
-  gnome-doc-utils-0.13.0-1
+  cygwin-1.5.25-15
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gnome-doc-utils-0.14.0-1
   make-3.81-1
-  rarian-0.6.0-1
+  rarian-0.8.1-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -22,29 +22,41 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-user-docs-2.22.1-X-src.tar.bz2
+  unpack gnome-user-docs-2.24.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-user-docs-2.22.1-X.cygport all
+  cygport ./gnome-user-docs-2.24.1-X.cygport all
 
 This will create:
-  /usr/src/gnome-user-docs-2.22.1-X-src.tar.bz2
-  /usr/src/gnome-user-docs-2.22.1-X.tar.bz2
+  /usr/src/gnome-user-docs-2.24.1-X-src.tar.bz2
+  /usr/src/gnome-user-docs-2.24.1-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /usr/share/doc/gnome-user-docs-2.22.1/AUTHORS
-  /usr/share/doc/gnome-user-docs-2.22.1/COPYING
-  /usr/share/doc/gnome-user-docs-2.22.1/COPYING-DOCS
-  /usr/share/doc/gnome-user-docs-2.22.1/ChangeLog
-  /usr/share/doc/gnome-user-docs-2.22.1/INSTALL
-  /usr/share/doc/gnome-user-docs-2.22.1/NEWS
-  /usr/share/doc/gnome-user-docs-2.22.1/README
+  /usr/share/doc/gnome-user-docs-2.24.1/AUTHORS
+  /usr/share/doc/gnome-user-docs-2.24.1/COPYING
+  /usr/share/doc/gnome-user-docs-2.24.1/COPYING-DOCS
+  /usr/share/doc/gnome-user-docs-2.24.1/ChangeLog
+  /usr/share/doc/gnome-user-docs-2.24.1/INSTALL
+  /usr/share/doc/gnome-user-docs-2.24.1/NEWS
+  /usr/share/doc/gnome-user-docs-2.24.1/README
   /usr/share/gnome/help/gnome-access-guide/C/accessintro.xml
   /usr/share/gnome/help/gnome-access-guide/C/enable.xml
+  /usr/share/gnome/help/gnome-access-guide/C/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/C/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/C/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/C/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/C/figures/button.png
@@ -78,6 +90,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/C/mobility.xml
   /usr/share/gnome/help/gnome-access-guide/C/preface.xml
   /usr/share/gnome/help/gnome-access-guide/C/sysadmin.xml
+  /usr/share/gnome/help/gnome-access-guide/de/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/de/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/de/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/de/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/de/figures/button.png
@@ -105,6 +129,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/de/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/de/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/de/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/el/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/el/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/el/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/el/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/el/figures/button.png
@@ -132,6 +168,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/el/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/el/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/el/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/en_GB/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/en_GB/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/en_GB/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/en_GB/figures/button.png
@@ -159,6 +207,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/en_GB/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/en_GB/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/en_GB/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/es/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/es/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/es/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/es/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/es/figures/button.png
@@ -186,6 +246,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/es/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/es/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/es/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fi/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/fi/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/fi/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/fi/figures/button.png
@@ -213,6 +285,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/fi/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/fi/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/fi/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/fr/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/fr/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/fr/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/fr/figures/button.png
@@ -240,6 +324,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/fr/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/fr/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/fr/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/hu/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/hu/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/hu/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/hu/figures/button.png
@@ -267,6 +363,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/hu/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/hu/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/hu/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/it/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/it/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/it/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/it/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/it/figures/button.png
@@ -294,6 +402,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/it/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/it/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/it/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/oc/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/oc/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/oc/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/oc/figures/button.png
@@ -321,6 +441,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/oc/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/oc/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/oc/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/pt/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/pt/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/pt/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/pt/figures/button.png
@@ -348,6 +480,18 @@ Files included in the binary package:
   /usr/share/gnome/help/gnome-access-guide/pt/figures/text_box.png
   /usr/share/gnome/help/gnome-access-guide/pt/figures/tree.png
   /usr/share/gnome/help/gnome-access-guide/pt/gnome-access-guide.xml
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/Braille_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/General_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/KeyBindings_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/KeyBindings_Tab_Unbound.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/KeyEcho_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/Magnifier_Advanced.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/Magnifier_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/MainWindow.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/Pronunciation_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/RPM_search_gnome_common.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/Speech_Tab.png
+  /usr/share/gnome/help/gnome-access-guide/sv/figures/TextAttributes_Tab.png
   /usr/share/gnome/help/gnome-access-guide/sv/figures/accessx.png
   /usr/share/gnome/help/gnome-access-guide/sv/figures/bouncekeys.png
   /usr/share/gnome/help/gnome-access-guide/sv/figures/button.png
@@ -391,16 +535,19 @@ Files included in the binary package:
   /usr/share/gnome/help/system-admin-guide/C/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/C/themes.xml
   /usr/share/gnome/help/system-admin-guide/ca/system-admin-guide.xml
+  /usr/share/gnome/help/system-admin-guide/de/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/el/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/es/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/fi/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/fr/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/it/system-admin-guide.xml
+  /usr/share/gnome/help/system-admin-guide/ja/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/ko/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/oc/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/pa/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/pt/system-admin-guide.xml
   /usr/share/gnome/help/system-admin-guide/sv/system-admin-guide.xml
+  /usr/share/gnome/help/system-admin-guide/zh_CN/system-admin-guide.xml
   /usr/share/gnome/help/user-guide/C/figures/ask_pointer.png
   /usr/share/gnome/help/user-guide/C/figures/busy_pointer.png
   /usr/share/gnome/help/user-guide/C/figures/com_file_manager_menu.png
@@ -1172,6 +1319,83 @@ Files included in the binary package:
   /usr/share/gnome/help/user-guide/it/gosstartsession.xml
   /usr/share/gnome/help/user-guide/it/gostools.xml
   /usr/share/gnome/help/user-guide/it/user-guide.xml
+  /usr/share/gnome/help/user-guide/ja/figures/ask_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/busy_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/com_file_manager_menu.png
+  /usr/share/gnome/help/user-guide/ja/figures/copy_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/force_quit.png
+  /usr/share/gnome/help/user-guide/ja/figures/four_hide_button.png
+  /usr/share/gnome/help/user-guide/ja/figures/gedit_window.png
+  /usr/share/gnome/help/user-guide/ja/figures/gnome_panel.png
+  /usr/share/gnome/help/user-guide/ja/figures/hyperlink_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/ibeam_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/link_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/lockscreen_icon.png
+  /usr/share/gnome/help/user-guide/ja/figures/logout_icon.png
+  /usr/share/gnome/help/user-guide/ja/figures/menu_bar_applet.png
+  /usr/share/gnome/help/user-guide/ja/figures/menu_panel.png
+  /usr/share/gnome/help/user-guide/ja/figures/move_panel_object_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/move_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/movewindow_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_browser_mode.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_button_bar.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_computer_launcher.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_emblem.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_go_to_location.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_link_emblem.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_noread_emblem.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_normal_size_button.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_nowrite_emblem.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_refine_search.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_sampleemblem1_icon.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_sampleemblem2_icon.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_sampleemblem3_icon.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_sampleemblem_icon.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_samplesymlink_icon.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_search_bar.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_search_results.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_spatial_icon_view.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_spatial_list_view.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_spatial_mode.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_spatial_view.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_starthere_launcher.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_trash_launcher.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_zoom_in_button.png
+  /usr/share/gnome/help/user-guide/ja/figures/naut_zoom_out_button.png
+  /usr/share/gnome/help/user-guide/ja/figures/nautilus_restore_saved_search.png
+  /usr/share/gnome/help/user-guide/ja/figures/normal_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/not_available_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/notification_area_icon.png
+  /usr/share/gnome/help/user-guide/ja/figures/open_drawer.png
+  /usr/share/gnome/help/user-guide/ja/figures/openwindows_menu.png
+  /usr/share/gnome/help/user-guide/ja/figures/panel_object_popup_menu.png
+  /usr/share/gnome/help/user-guide/ja/figures/resize_pointer.png
+  /usr/share/gnome/help/user-guide/ja/figures/run_button.png
+  /usr/share/gnome/help/user-guide/ja/figures/sample_applet.png
+  /usr/share/gnome/help/user-guide/ja/figures/screenshot_button.png
+  /usr/share/gnome/help/user-guide/ja/figures/searchtool_button.png
+  /usr/share/gnome/help/user-guide/ja/figures/show_desktop_button.png
+  /usr/share/gnome/help/user-guide/ja/figures/titlebar_anno_window.png
+  /usr/share/gnome/help/user-guide/ja/figures/titlebar_window.png
+  /usr/share/gnome/help/user-guide/ja/figures/typical_menu.png
+  /usr/share/gnome/help/user-guide/ja/figures/window_list_applet.png
+  /usr/share/gnome/help/user-guide/ja/figures/window_list_group_applet.png
+  /usr/share/gnome/help/user-guide/ja/figures/workspace_switcher_applet.png
+  /usr/share/gnome/help/user-guide/ja/figures/yelp_add_bookmark.png
+  /usr/share/gnome/help/user-guide/ja/figures/yelp_edit_bookmarks.png
+  /usr/share/gnome/help/user-guide/ja/figures/yelp_preferences.png
+  /usr/share/gnome/help/user-guide/ja/figures/yelp_window.png
+  /usr/share/gnome/help/user-guide/ja/glossary.xml
+  /usr/share/gnome/help/user-guide/ja/gosbasic.xml
+  /usr/share/gnome/help/user-guide/ja/goscustdesk.xml
+  /usr/share/gnome/help/user-guide/ja/goseditmainmenu.xml
+  /usr/share/gnome/help/user-guide/ja/gosfeedback.xml
+  /usr/share/gnome/help/user-guide/ja/gosnautilus.xml
+  /usr/share/gnome/help/user-guide/ja/gosoverview.xml
+  /usr/share/gnome/help/user-guide/ja/gospanel.xml
+  /usr/share/gnome/help/user-guide/ja/gosstartsession.xml
+  /usr/share/gnome/help/user-guide/ja/gostools.xml
+  /usr/share/gnome/help/user-guide/ja/user-guide.xml
   /usr/share/gnome/help/user-guide/ko/figures/ask_pointer.png
   /usr/share/gnome/help/user-guide/ko/figures/busy_pointer.png
   /usr/share/gnome/help/user-guide/ko/figures/com_file_manager_menu.png
@@ -1711,6 +1935,83 @@ Files included in the binary package:
   /usr/share/gnome/help/user-guide/sv/gosstartsession.xml
   /usr/share/gnome/help/user-guide/sv/gostools.xml
   /usr/share/gnome/help/user-guide/sv/user-guide.xml
+  /usr/share/gnome/help/user-guide/th/figures/ask_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/busy_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/com_file_manager_menu.png
+  /usr/share/gnome/help/user-guide/th/figures/copy_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/force_quit.png
+  /usr/share/gnome/help/user-guide/th/figures/four_hide_button.png
+  /usr/share/gnome/help/user-guide/th/figures/gedit_window.png
+  /usr/share/gnome/help/user-guide/th/figures/gnome_panel.png
+  /usr/share/gnome/help/user-guide/th/figures/hyperlink_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/ibeam_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/link_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/lockscreen_icon.png
+  /usr/share/gnome/help/user-guide/th/figures/logout_icon.png
+  /usr/share/gnome/help/user-guide/th/figures/menu_bar_applet.png
+  /usr/share/gnome/help/user-guide/th/figures/menu_panel.png
+  /usr/share/gnome/help/user-guide/th/figures/move_panel_object_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/move_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/movewindow_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_browser_mode.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_button_bar.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_computer_launcher.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_emblem.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_go_to_location.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_link_emblem.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_noread_emblem.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_normal_size_button.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_nowrite_emblem.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_refine_search.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_sampleemblem1_icon.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_sampleemblem2_icon.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_sampleemblem3_icon.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_sampleemblem_icon.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_samplesymlink_icon.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_search_bar.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_search_results.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_spatial_icon_view.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_spatial_list_view.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_spatial_mode.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_spatial_view.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_starthere_launcher.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_trash_launcher.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_zoom_in_button.png
+  /usr/share/gnome/help/user-guide/th/figures/naut_zoom_out_button.png
+  /usr/share/gnome/help/user-guide/th/figures/nautilus_restore_saved_search.png
+  /usr/share/gnome/help/user-guide/th/figures/normal_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/not_available_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/notification_area_icon.png
+  /usr/share/gnome/help/user-guide/th/figures/open_drawer.png
+  /usr/share/gnome/help/user-guide/th/figures/openwindows_menu.png
+  /usr/share/gnome/help/user-guide/th/figures/panel_object_popup_menu.png
+  /usr/share/gnome/help/user-guide/th/figures/resize_pointer.png
+  /usr/share/gnome/help/user-guide/th/figures/run_button.png
+  /usr/share/gnome/help/user-guide/th/figures/sample_applet.png
+  /usr/share/gnome/help/user-guide/th/figures/screenshot_button.png
+  /usr/share/gnome/help/user-guide/th/figures/searchtool_button.png
+  /usr/share/gnome/help/user-guide/th/figures/show_desktop_button.png
+  /usr/share/gnome/help/user-guide/th/figures/titlebar_anno_window.png
+  /usr/share/gnome/help/user-guide/th/figures/titlebar_window.png
+  /usr/share/gnome/help/user-guide/th/figures/typical_menu.png
+  /usr/share/gnome/help/user-guide/th/figures/window_list_applet.png
+  /usr/share/gnome/help/user-guide/th/figures/window_list_group_applet.png
+  /usr/share/gnome/help/user-guide/th/figures/workspace_switcher_applet.png
+  /usr/share/gnome/help/user-guide/th/figures/yelp_add_bookmark.png
+  /usr/share/gnome/help/user-guide/th/figures/yelp_edit_bookmarks.png
+  /usr/share/gnome/help/user-guide/th/figures/yelp_preferences.png
+  /usr/share/gnome/help/user-guide/th/figures/yelp_window.png
+  /usr/share/gnome/help/user-guide/th/glossary.xml
+  /usr/share/gnome/help/user-guide/th/gosbasic.xml
+  /usr/share/gnome/help/user-guide/th/goscustdesk.xml
+  /usr/share/gnome/help/user-guide/th/goseditmainmenu.xml
+  /usr/share/gnome/help/user-guide/th/gosfeedback.xml
+  /usr/share/gnome/help/user-guide/th/gosnautilus.xml
+  /usr/share/gnome/help/user-guide/th/gosoverview.xml
+  /usr/share/gnome/help/user-guide/th/gospanel.xml
+  /usr/share/gnome/help/user-guide/th/gosstartsession.xml
+  /usr/share/gnome/help/user-guide/th/gostools.xml
+  /usr/share/gnome/help/user-guide/th/user-guide.xml
   /usr/share/gnome/help/user-guide/zh_CN/figures/ask_pointer.png
   /usr/share/gnome/help/user-guide/zh_CN/figures/busy_pointer.png
   /usr/share/gnome/help/user-guide/zh_CN/figures/com_file_manager_menu.png
@@ -1802,16 +2103,19 @@ Files included in the binary package:
   /usr/share/omf/gnome-access-guide/gnome-access-guide-sv.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-C.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-ca.omf
+  /usr/share/omf/system-admin-guide/system-admin-guide-de.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-el.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-es.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-fi.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-fr.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-it.omf
+  /usr/share/omf/system-admin-guide/system-admin-guide-ja.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-ko.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-oc.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-pa.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-pt.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-sv.omf
+  /usr/share/omf/system-admin-guide/system-admin-guide-zh_CN.omf
   /usr/share/omf/user-guide/user-guide-C.omf
   /usr/share/omf/user-guide/user-guide-ar.omf
   /usr/share/omf/user-guide/user-guide-bg.omf
@@ -1822,6 +2126,7 @@ Files included in the binary package:
   /usr/share/omf/user-guide/user-guide-fr.omf
   /usr/share/omf/user-guide/user-guide-hu.omf
   /usr/share/omf/user-guide/user-guide-it.omf
+  /usr/share/omf/user-guide/user-guide-ja.omf
   /usr/share/omf/user-guide/user-guide-ko.omf
   /usr/share/omf/user-guide/user-guide-oc.omf
   /usr/share/omf/user-guide/user-guide-pa.omf
@@ -1829,11 +2134,15 @@ Files included in the binary package:
   /usr/share/omf/user-guide/user-guide-pt_BR.omf
   /usr/share/omf/user-guide/user-guide-ru.omf
   /usr/share/omf/user-guide/user-guide-sv.omf
+  /usr/share/omf/user-guide/user-guide-th.omf
   /usr/share/omf/user-guide/user-guide-zh_CN.omf
 
 ------------------
 
 Port Notes:
+
+----- version 2.24.1-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.22.1-1 -----
 Version bump for GNOME 2.22.
