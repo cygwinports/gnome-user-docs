@@ -3,14 +3,14 @@ gnome-user-docs
 GNOME user documentation
 
 Build requirements:
-  cygwin-1.5.25-15
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gnome-doc-utils-0.14.2-1
-  make-3.81-1
-  rarian-0.8.1-1
+  cygwin-1.7.0-45
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gnome-doc-utils-0.16.0-1
+  make-3.81-2
+  rarian-0.8.1-10
   sed-4.1.5-2
 
 Canonical homepage:
@@ -22,43 +22,46 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-user-docs-2.24.2-X-src.tar.bz2
+  unpack gnome-user-docs-2.26.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-user-docs-2.24.2-X.cygport all
+  cygport ./gnome-user-docs-2.26.1-X.cygport all
 
 This will create:
-  /usr/src/gnome-user-docs-2.24.2-X-src.tar.bz2
-  /usr/src/gnome-user-docs-2.24.2-X.tar.bz2
+  /usr/src/gnome-user-docs-2.26.1-X-src.tar.bz2
+  /usr/src/gnome-user-docs-2.26.1-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /usr/share/doc/gnome-user-docs-2.24.2/AUTHORS
-  /usr/share/doc/gnome-user-docs-2.24.2/COPYING
-  /usr/share/doc/gnome-user-docs-2.24.2/COPYING-DOCS
-  /usr/share/doc/gnome-user-docs-2.24.2/ChangeLog
-  /usr/share/doc/gnome-user-docs-2.24.2/INSTALL
-  /usr/share/doc/gnome-user-docs-2.24.2/NEWS
-  /usr/share/doc/gnome-user-docs-2.24.2/README
+  /usr/share/doc/gnome-user-docs/AUTHORS
+  /usr/share/doc/gnome-user-docs/COPYING
+  /usr/share/doc/gnome-user-docs/COPYING-DOCS
+  /usr/share/doc/gnome-user-docs/ChangeLog
+  /usr/share/doc/gnome-user-docs/INSTALL
+  /usr/share/doc/gnome-user-docs/NEWS
+  /usr/share/doc/gnome-user-docs/README
   /usr/share/gnome/help/gnome-access-guide/C/*
   /usr/share/gnome/help/gnome-access-guide/de/*
   /usr/share/gnome/help/gnome-access-guide/el/*
   /usr/share/gnome/help/gnome-access-guide/en_GB/*
   /usr/share/gnome/help/gnome-access-guide/es/*
+  /usr/share/gnome/help/gnome-access-guide/eu/*
   /usr/share/gnome/help/gnome-access-guide/fi/*
   /usr/share/gnome/help/gnome-access-guide/fr/*
   /usr/share/gnome/help/gnome-access-guide/hu/*
   /usr/share/gnome/help/gnome-access-guide/it/*
   /usr/share/gnome/help/gnome-access-guide/oc/*
   /usr/share/gnome/help/gnome-access-guide/pt/*
+  /usr/share/gnome/help/gnome-access-guide/ru/*
   /usr/share/gnome/help/gnome-access-guide/sv/*
   /usr/share/gnome/help/system-admin-guide/C/*
   /usr/share/gnome/help/system-admin-guide/ca/*
   /usr/share/gnome/help/system-admin-guide/de/*
   /usr/share/gnome/help/system-admin-guide/el/*
+  /usr/share/gnome/help/system-admin-guide/eu/*
   /usr/share/gnome/help/system-admin-guide/es/*
   /usr/share/gnome/help/system-admin-guide/fi/*
   /usr/share/gnome/help/system-admin-guide/fr/*
@@ -73,6 +76,7 @@ Files included in the binary package:
   /usr/share/gnome/help/user-guide/C/*
   /usr/share/gnome/help/user-guide/ar/*
   /usr/share/gnome/help/user-guide/bg/*
+  /usr/share/gnome/help/user-guide/cs/*
   /usr/share/gnome/help/user-guide/de/*
   /usr/share/gnome/help/user-guide/el/*
   /usr/share/gnome/help/user-guide/es/*
@@ -95,18 +99,21 @@ Files included in the binary package:
   /usr/share/omf/gnome-access-guide/gnome-access-guide-el.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-en_GB.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-es.omf
+  /usr/share/omf/gnome-access-guide/gnome-access-guide-eu.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-fi.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-fr.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-hu.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-it.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-oc.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-pt.omf
+  /usr/share/omf/gnome-access-guide/gnome-access-guide-ru.omf
   /usr/share/omf/gnome-access-guide/gnome-access-guide-sv.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-C.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-ca.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-de.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-el.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-es.omf
+  /usr/share/omf/system-admin-guide/system-admin-guide-eu.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-fi.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-fr.omf
   /usr/share/omf/system-admin-guide/system-admin-guide-it.omf
@@ -120,6 +127,7 @@ Files included in the binary package:
   /usr/share/omf/user-guide/user-guide-C.omf
   /usr/share/omf/user-guide/user-guide-ar.omf
   /usr/share/omf/user-guide/user-guide-bg.omf
+  /usr/share/omf/user-guide/user-guide-cs.omf
   /usr/share/omf/user-guide/user-guide-de.omf
   /usr/share/omf/user-guide/user-guide-el.omf
   /usr/share/omf/user-guide/user-guide-es.omf
@@ -142,23 +150,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 2.24.2-1 -----
-Version bump.
-
------ version 2.24.1-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.22.1-1 -----
-Version bump for GNOME 2.22.
-
------ version 2.20.1-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.18.2-1 -----
-Version bump for GNOME 2.18.
-
------ version 2.14.2-1 -----
-Initial release for Cygwin.
+----- version 2.26.1-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 
