@@ -3,14 +3,14 @@ gnome-user-docs
 GNOME user documentation
 
 Build requirements:
-  cygwin-1.7.0-45
+  cygwin-1.7.0-48
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   cygport-0.9.6-1
   gawk-3.1.6-2
-  gnome-doc-utils-0.16.0-1
+  gnome-doc-utils-0.16.1-2
   make-3.81-2
-  rarian-0.8.1-10
+  rarian-0.8.1-11
   sed-4.1.5-2
 
 Canonical homepage:
@@ -22,15 +22,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-user-docs-2.26.1-X-src.tar.bz2
+  unpack gnome-user-docs-2.26.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-user-docs-2.26.1-X.cygport all
+  cygport ./gnome-user-docs-2.26.2-X.cygport all
 
 This will create:
-  /usr/src/gnome-user-docs-2.26.1-X-src.tar.bz2
-  /usr/src/gnome-user-docs-2.26.1-X.tar.bz2
+  /usr/src/gnome-user-docs-2.26.2-X-src.tar.bz2
+  /usr/src/gnome-user-docs-2.26.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -149,6 +149,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.26.2-1 -----
+Version bump.
 
 ----- version 2.26.1-1 -----
 Initial release of GNOME 2.26 for Cygwin 1.7.
