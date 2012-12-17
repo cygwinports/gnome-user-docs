@@ -1,0 +1,11 @@
+inherit gnome2
+
+NAME="gnome-user-docs"
+VERSION=3.6.2
+RELEASE=1
+CATEGORY="GNOME Doc"
+SUMMARY="GNOME user documentation"
+DESCRIPTION="GNOME user documentation"
+
+DEPEND="gnome-common
+	yelp-tools"
