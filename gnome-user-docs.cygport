@@ -1,11 +1,13 @@
 inherit gnome2
 
 NAME="gnome-user-docs"
-VERSION=3.8.2
+VERSION=3.10.3
 RELEASE=1
 CATEGORY="Doc"
 SUMMARY="GNOME user documentation"
 DESCRIPTION="GNOME user documentation"
+
+ARCH=noarch
 
 DEPEND="gnome-common
 	yelp-tools"
