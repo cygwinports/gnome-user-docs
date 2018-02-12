@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-user-docs"
-VERSION=3.24.2
+VERSION=3.26.2.1
 RELEASE=1
 CATEGORY="Doc"
 SUMMARY="GNOME user documentation"
